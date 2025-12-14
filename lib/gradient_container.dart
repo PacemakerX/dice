@@ -22,7 +22,7 @@ class GradientContainer extends StatelessWidget {
           tileMode: TileMode.clamp,
         ),
       ),
-      child: Center(child: OverflowTextContainer()),
+      child: Center(child: TextContainer("Hello guys this is my chanle")),
     );
   }
 }

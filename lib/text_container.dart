@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 
 // Original simple Text
 class TextContainer extends StatelessWidget {
-  const TextContainer({super.key});
+  const TextContainer(this.text, {super.key});
 
+  final String text; // binding between text in parameters and text in function
   @override
   Widget build(context) {
-    return const Text(
-      "hello World!",
+    return Text(
+      text,
       style: TextStyle(
         color: Colors.orange,
         fontSize: 50,
@@ -110,8 +111,6 @@ class OverflowTextContainer extends StatelessWidget {
     );
   }
 }
-
-
 
 // 6) Responsive text using FittedBox (scales to fit parent)
 class ResponsiveTextContainer extends StatelessWidget {
