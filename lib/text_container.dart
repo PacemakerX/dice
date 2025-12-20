@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 
 // Original simple Text
 class TextContainer extends StatelessWidget {
-  const TextContainer(this.text, {super.key});
+  const TextContainer(this.text, this.color, {super.key});
 
   final String text; // binding between text in parameters and text in function
+  final Color color;
   @override
   Widget build(context) {
     return Text(
       text,
       style: TextStyle(
-        color: Colors.orange,
+        color: color,
         fontSize: 50,
         fontFamily: 'Roboto',
         fontStyle: FontStyle.italic,
